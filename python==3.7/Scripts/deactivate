@@ -1,0 +1,2 @@
+#!/usr/bin/env bash 
+source /c/users/utpal/appdata/local/programs/python/python38/Scripts/deactivate "$@"
