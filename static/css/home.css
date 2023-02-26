@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+html{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+} 
+
+h1{
+  text-align: center;
+  padding: 50px;
+  font-size: 100px;
+}
+
+form { 
+  margin: 0 auto; 
+  width: 250px;
+}
+
+input{
+  border: 1px solid black;
+  margin-bottom: 5px;
+  height: 25px;
+  width: 100%;
+}
+
+button{
+  margin: 10px 0px;
+  height: 35px;
+  width: 80px;
+  border: 2px solid black;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.result{
+  margin: 0 auto; 
+  padding: 7px 695px;
+  font-size: 20px;
+}

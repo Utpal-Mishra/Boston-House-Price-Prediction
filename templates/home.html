@@ -1,3 +1,75 @@
-<h1>
-    Hello World
-</h1>
+<!-- https://www.youtube.com/watch?v=MJ1vWb1rGwM -->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+
+        <meta charset = "UTF=8">
+        <meta neme = "viewpoint" content="width=device-width, initial-scale=1.0">
+        <link href = "{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+        <title>House Price Prediction</title>
+
+    </head>
+
+    <body>
+        <div class = "login">
+            <h1>Boston House Price Prediction</h1>
+
+            <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('Predict')}}"method="post">
+
+                <!-- <label for="fname">CRIM: </label><br> -->
+                <input type="text" name="CRIM" placeholder=" CRIM" required="required" /><br>
+                
+                <!-- <label for="fname">ZN: </label><br> -->
+                <input type="text" name="ZN" placeholder=" ZN" required="required" /><br>
+                
+                <!-- <label for="fname">INDUS: </label><br> -->
+                <input type="text" name="INDUS" placeholder=" INDUS" required="required" /><br>
+                
+                <!-- <label for="fname">CHAS: </label><br> -->
+                <input type="text" name="CHAS" placeholder=" CHAS" required="required" /><br>
+                
+                <!-- <label for="fname">NOX: </label><br> -->
+                <input type="text" name="NOX" placeholder=" NOX" required="required" /><br>
+                
+                <!-- <label for="fname">RM: </label><br> -->
+                <input type="text" name="RM" placeholder=" RM" required="required" /><br>
+                
+                <!-- <label for="fname">AGE: </label><br> -->
+                <input type="text" name="Age" placeholder=" AGE" required="required" /><br>
+                
+                <!-- <label for="fname">DIS: </label><br> -->
+                <input type="text" name="DIS" placeholder=" DIS" required="required" /><br>
+                
+                <!-- <label for="fname">RAD: </label><br> -->
+                <input type="text" name="RAD" placeholder=" RAD" required="required" /><br>
+                
+                <!-- <label for="fname">TAX: </label><br> -->
+                <input type="text" name="TAX" placeholder=" TAX" required="required" /><br>
+                
+                <!-- <label for="fname">PTRATIO: </label><br> -->
+                <input type="text" name="PTRATIO" placeholder=" PTRATIO" required="required" /><br>
+                
+                <!-- <label for="fname">B: </label><br> -->
+                <input type="text" name="B" placeholder=" B" required="required" /><br>
+                
+                <!-- <label for="fname">LSTAT: </label><br> -->
+                <input type="text" name="LSTAT" placeholder=" LSTAT" required="required" /><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+
+        <br>
+        <br>
+        
+        </div>
+
+        <div class = 'result'>
+            <u>{{prediction_text}}</u>
+        </div>
+
+    </body>
+
+</html>
